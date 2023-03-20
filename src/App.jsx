@@ -294,7 +294,7 @@ function App() {
       }
     }
 
-    animate();
+    // animate();
   }, [size.width, size.height]);
 
   // useEffect(() => {
@@ -416,7 +416,7 @@ function App() {
                 target="_blank"
                 className="mx-[4rem] hover:scale-[1.1] hover:duration-75 hover:hue-rotate-180"
               >
-                <img src="./linkedin-24.png" alt="LinkedIn" />
+                <img src="./images/linkedin-24.png" alt="LinkedIn" />
               </a>
               <a
                 id="github"
@@ -425,7 +425,7 @@ function App() {
                 type="noopener noreferrer"
                 className="mx-[4rem] hover:scale-[1.1]"
               >
-                <img src="./github-24.png" alt="Github" />
+                <img src="./images/github-24.png" alt="Github" />
               </a>
               <a
                 id="mail"
@@ -443,7 +443,7 @@ function App() {
                 type="noopener noreferrer"
                 className="mx-[4rem] hover:scale-[1.1]"
               >
-                <img src="./facebook-24.png" alt="Facebook" />
+                <img src="./images/facebook-24.png" alt="Facebook" />
               </a>
               <a
                 id="instagram"
@@ -452,7 +452,7 @@ function App() {
                 type="noopener noreferrer"
                 className="mx-[4rem] hover:scale-[1.1]"
               >
-                <img src="./instagram-24.png" alt="Instagram" />
+                <img src="./images/instagram-24.png" alt="Instagram" />
               </a>
             </div>
 

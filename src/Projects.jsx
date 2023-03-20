@@ -44,7 +44,10 @@ export default function Projects() {
                 />
                 <ProjectBoxNew
                     title="Pathfinding Visualizer"
-                    text={["A simple tool for visualizing common pathfinding algorithms, featuring Dijkstra's, A* search, DFS, and BFS algorithms."]}
+                    text={[
+                        "A simple tool for visualizing common pathfinding algorithms, featuring Dijkstra's, A* search, DFS, and BFS algorithms.",
+                        "The tool also features 3 visualization speeds (slow, average, fast), ability to generate random walls, and custom placing of start and end cells."
+                    ]}
                     coverImage="path.gif"
                     modalMedia={["pathviz_demo.mp4"]}
                     footer="React.js, JavaScript, HTML5, CSS3"

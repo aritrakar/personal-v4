@@ -1,7 +1,7 @@
 {
   "name": "personal-v3",
   "private": true,
-  "homepage": "https://aritrakar.github.io/",
+  "homepage": "https://aritrakar.github.io/personal-v3/",
   "version": "0.0.0",
   "engines": {
     "node": "16.13.1"

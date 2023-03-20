@@ -1,9 +1,15 @@
 import React from "react"
 
+function getName(img) {
+    let split = String(img).split(".");
+    let name = split[0].substring(1);
+    return name[0].toUpperCase() + name.substring(1);
+}
+
 function getCertificationCard({key, name, img, link}) {
     return (
         <div className="w-[14rem] flex flex-col justify-center text-center items-center m-2" key={key}>
-            <div><img src={img} className="w-[5rem] pb-4 object-cover" alt={name}/></div>
+            <div><img src={`/images/certifications/${img}`} className="w-[5rem] pb-4 object-cover" alt={name} title={getName(img)}/></div>
             <a href={link} rel="noopener noreferrer"><h5 className="text-slate-200 hover:text-white text-xl">{name}</h5></a>
         </div>
     )

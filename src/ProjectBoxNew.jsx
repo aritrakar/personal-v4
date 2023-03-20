@@ -88,7 +88,7 @@ export default function Card(props) {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <img src="/github-24.png" className="m-auto w-[1.7rem] hover:scale-[1.05] transition duration-100"/>
+                  <img src="/images/github-24.png" className="m-auto w-[1.7rem] hover:scale-[1.05] transition duration-100"/>
                 </a>
                 )
               }
@@ -100,7 +100,7 @@ export default function Card(props) {
         className={`w-full h-60 object-cover ${
             !loaded && "animate-pulse"
         } `}
-        src={props.coverImage}
+        src={`/images/projects/${props.coverImage}`}
         alt={props.title}
         onLoad={() => {
             setLoaded(true);
@@ -169,45 +169,16 @@ export default function Card(props) {
                       </Dialog.Title>
 
                       <div className="flex flex-row items-center justify-center">
-                        {/* {props.media_type === "image" ? (
-                          <img
-                            className={`w-[45rem] h-[25rem] object-cover ${
-                              !loaded && "animate-pulse"
-                            } bg-gray-500`}
-                            src={props.coverImage}
-                            alt={props.title}
-                            onLoad={() => {
-                              setLoaded(true);
-                            }}
-                          />
-                        ) : (
-                          <div
-                            className="relative overflow-hidden w-full"
-                          >
-                            <iframe
-                              title={props.title}
-                              src={props.coverImage}
-                              // frameBorder={0}
-                              allowFullScreen
-                              className={`absolute ${
-                                !loaded && "animate-pulse"
-                              } bg-gray-500 rounded-t-2xl top-0 left-0 w-[45rem] h-[30rem] object-cover`}
-                              // Not sure what the dimensions should be. Square? Rectangle?
-                              onLoad={() => setLoaded(true)}
-                            />
-                          </div>
-                        )} */}
-
                         <div className="w-[50%] mb-1">
                           <Slider {...sliderSettings}>
                             {props.modalMedia.map((item, key) => {
                               return (<div key={key}>
                                 {
                                   isImage(item) ? 
-                                  <img src={item} alt={item} className={`w-[45rem] h-[25rem] object-contain ${
+                                  <img src={`/images/projects/${item}`} alt={item} className={`w-[45rem] h-[25rem] object-contain ${
                                     !loaded && "animate-pulse"
-                                  } bg-gray-500`}/> :
-                                  <iframe src={item} alt={item} className={`w-[27rem] h-[20rem] transform scale-100 origin-top-left ${
+                                  } `}/> :
+                                  <iframe src={`/images/projects/${item}`} alt={item} className={`w-[27rem] h-[20rem] transform scale-100 origin-top-left ${
                                     !loaded && "animate-pulse"
                                   } `} autoPlay muted loop
                                   onLoad={() => setLoaded(true)} />

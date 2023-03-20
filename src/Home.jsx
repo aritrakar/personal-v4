@@ -325,7 +325,7 @@ export default function Home() {
           target="_blank"
           className="hover:bg-[#2872a3]"
         >
-          <img src="./linkedin-24.png" alt="LinkedIn" />
+          <img src="./images/linkedin-24.png" alt="LinkedIn" />
         </a>
         <a
           id="github"
@@ -333,7 +333,7 @@ export default function Home() {
           target="_blank"
           type="noopener noreferrer"
         >
-          <img src="./github-24.png" alt="Github" />
+          <img src="./images/github-24.png" alt="Github" />
         </a>
         <a
           id="mail"
@@ -349,7 +349,7 @@ export default function Home() {
           target="_blank"
           type="noopener noreferrer"
         >
-          <img src="./facebook-24.png" alt="Facebook" />
+          <img src="./images/facebook-24.png" alt="Facebook" />
         </a>
         <a
           id="instagram"
@@ -357,7 +357,7 @@ export default function Home() {
           target="_blank"
           type="noopener noreferrer"
         >
-          <img src="./instagram-24.png" alt="Instagram" />
+          <img src="./images/instagram-24.png" alt="Instagram" />
         </a>
       </div>
 

@@ -12,7 +12,7 @@ export default function WorkCard(props) {
                     </ul>
                     <p className="text-gray-600 text-xs">{props.footer}</p>
                 </div>
-                <img className="min-w-[10vw] h-fit p-5 md:h-auto object-contain md:w-[25vw] rounded-t-lg md:rounded-none md:rounded-l-lg" src={props.image} alt="" />
+                <img className="min-w-[10vw] h-fit p-5 md:h-auto object-contain md:w-[25vw] rounded-t-lg md:rounded-none md:rounded-l-lg" src={`/images/${props.image}`} alt="" />
             </div>
         </div>
     );

@@ -26,7 +26,7 @@ export default function ProjectBox(props) {
 
     return (
         <div className="flex flex-col justify-center items-center text-center p-4 w-[15vw] h-auto">
-            <img className="w-24 h-24 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src={props.image} alt="" />
+            <img className="w-24 h-24 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src={`/images/projects/${props.image}`} alt="" />
             <div className="p-6 flex flex-col justify-start bg-slate-200">
                 <h5 className="text-gray-900 text-xl font-medium mb-2">{props.title}</h5>
                 <p className="text-gray-700 text-base mb-3">
