@@ -294,7 +294,7 @@ function App() {
       }
     }
 
-    // animate();
+    animate();
   }, [size.width, size.height]);
 
   // useEffect(() => {

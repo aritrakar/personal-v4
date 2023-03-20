@@ -1,10 +1,9 @@
 {
-  "name": "personal-v3",
+  "name": "personal-v4",
   "private": true,
-  "homepage": "https://aritrakar.github.io/personal-v3/",
   "version": "0.0.0",
   "engines": {
-    "node": "16.13.1"
+    "node": "18.15.1"
   },
   "scripts": {
     "dev": "vite",
@@ -28,5 +27,17 @@
     "tailwindcss": "^3.1.4",
     "three": "^0.142.0",
     "vite": "^2.9.9"
-  }
+  },
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aritrakar/personal-v4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aritrakar/personal-v4/issues"
+  },
+  "description": ""
 }
