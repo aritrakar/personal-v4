@@ -405,7 +405,7 @@ function App() {
 
                 
 
-                <a href="https://drive.google.com/file/d/1wcBEG2iU3kBMFXN7WkO2-7ws5qnqLa6w/view?usp=share_link" target="_blank" type="noopener noreferrer" className="border px-4 py-2 mx-3 rounded-lg text-sm font-space-mono uppercase hover:bg-white hover:text-gray-800 duration-200 inline-block">Resume</a>
+                <a href="https://github.com/aritrakar/resume/blob/main/Aritra_Kar_Resume.pdf" target="_blank" type="noopener noreferrer" className="border px-4 py-2 mx-3 rounded-lg text-sm font-space-mono uppercase hover:bg-white hover:text-gray-800 duration-200 inline-block">Resume</a>
               </div>
             </div>
 
