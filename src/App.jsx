@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import * as THREE from "three";
 import gsap from "gsap";
 import Projects from "./Projects"
-import Work from "./Work";
 import Skills from "./Skills";
 import { useRef } from 'react';
 import Footer from './Footer';
@@ -10,6 +9,7 @@ import "./App.css"
 import WorkMain from './WorkMain';
 import Certifications from './Certifications';
 import Education from './Education';
+import ReactGA from 'react-ga';
 
 let starGeometry = undefined;
 let stars = undefined;
@@ -167,6 +167,10 @@ function useWindowSize() {
 
 let bannerCamera = undefined, bannerScene = undefined;
 
+// For Google Analytics
+const TRACKING_ID = "G-4NGRD1MKW4";
+ReactGA.initialize(TRACKING_ID);
+
 function App() {
   const size = useWindowSize();
   useEffect(() => {
@@ -297,55 +301,9 @@ function App() {
     animate();
   }, [size.width, size.height]);
 
-  // useEffect(() => {
-  //     const scene = new THREE.Scene();
-  //     const camera = new THREE.PerspectiveCamera(
-  //     75,
-  //     1,
-  //     0.1,
-  //     1000
-  //     );
-  //     const myCanvas = document.getElementById("canvas2");
-  //     console.log("myCanvas2: ", myCanvas)
-
-  //     const renderer = new THREE.WebGLRenderer({canvas: myCanvas});
-  //     renderer.setPixelRatio(window.devicePixelRatio);
-  //     renderer.setSize(Math.floor(window.innerWidth * 0.15), Math.floor(window.innerWidth * 0.15));
-
-  //     camera.position.setZ(2);
-  //     document.body.appendChild(renderer.domElement);
-
-  //     const am = new THREE.AmbientLight(0xff0000, 1)
-  //     const light = new THREE.DirectionalLight(0xffffff, 1);
-  //     light.position.set(0, 1, 0);
-  //     scene.add(am);
-  //     scene.add(light);
-
-  //     const textureLoader = new THREE.TextureLoader();
-  //     const texture = textureLoader.load("matcap.png")
-
-  //     const geometry = new THREE.TorusKnotGeometry(0.5, 0.2, 100, 22);
-  //     // const material = new THREE.MeshBasicMaterial({color: 0xffff00});
-  //     const material = new THREE.MeshMatcapMaterial({matcap: texture});
-  //     const torusKnot = new THREE.Mesh(geometry, material);
-  //     scene.add(torusKnot);
-
-  //   const animateTorus = () => {
-  //     window.requestAnimationFrame(animateTorus);
-  //     torusKnot.rotation.y -= 0.007;
-  //     const cameraX = cursor.x - 1;
-  //     const cameraY = cursor.y;
-
-  //     // camera.position.x += (cameraX - camera.position.x) / 10;
-  //     camera.position.x = cameraX / 10;
-  //     camera.position.y = -cameraY / 10;
-      
-  //     if(renderer && scene && camera)
-  //       renderer.render(scene, camera);
-  //   }
-
-  // animateTorus();
-  // }, []);
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  });
 
   const toElement = (elementRef) => {
     if(!elementRef) return

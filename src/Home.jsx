@@ -1,7 +1,6 @@
 import React, {useEffect} from "react";
 import * as THREE from "three";
 import gsap from "gsap";
-import ScrollToPlugin from "gsap/ScrollToPlugin";
 import Projects from "./Projects"
 import Work from "./Work";
 import Skills from "./Skills";

@@ -1,20 +1,39 @@
 import React from "react";
-import ProjectBoxNew from "./ProjectBoxNew";
+import ProjectBoxNew from "./components/ProjectBoxNew";
 
 export default function Projects() {
     return (
         <div id="projectContent" className="w-[100vw] h-auto py-2 white z-10">
-            <h1 className="text-gray-100 text-4xl m-5">Featured Projects</h1>
+            <h1 className="text-gray-100 text-4xl m-5">🌟Featured Projects</h1>
             <h3 className="text-gray-300 text-xl m-5">Click on each project to learn more!</h3>
             <div className="flex flex-wrap justify-center">
+                <ProjectBoxNew 
+                    title="Doom Agent"
+                    text={[
+                        "Exploring reinforcement learning techniques by building agents to play through Doom 1993 levels.",
+                        ]}
+                    coverImage="doom.svg"
+                    modalMedia={["doom.svg"]}
+                    footer="Python, VizDoom, PyTorch"
+                    demo=""
+                    github=""
+                />
+                <ProjectBoxNew 
+                    title="A.I. Projects"
+                    text={["A collection of experiments using A.I. in different fields. See GitHub repo for more details."]}
+                    coverImage="brain.png"
+                    modalMedia={["brain.png"]}
+                    footer="Python, Tensorflow, Keras, Scikit-learn, Matplotlib, Pandas, NumPy"
+                    demo=""
+                    github="https://github.com/aritrakar/ai-projects"
+                />
                 <ProjectBoxNew 
                     title="Traffic Sign Detection"
                     text={["Utilized CNNs and image preprocessing algorithms to recognise 43 different traffic signs, achieving 94.78\% validation accuracy on the GTSRB dataset.",
                     "Optimized performance using the Adam optimizer in model training, and using image preprocessing algorithms on the 50k+ image dataset.",
                     "Visualized model training and validation accuracies and losses across epochs with Matplotlib."
-                ]}
+                    ]}
                     coverImage="traffic.png"
-                    media_type="image"
                     modalMedia={["traffic_predictions.png", "traffic_graph.png"]}
                     footer="Python, Tensorflow, Keras, Scikit-learn, Matplotlib, Pandas, NumPy"
                     demo=""
@@ -25,7 +44,6 @@ export default function Projects() {
                     text={["Created a compiler for WLP4, a subset of C, which outputs a relocatable, executable MIPS binary file.",
                            "Compiler design incorporated (simplified) Maximal Munch scanning algorithm, LR(1) parser, parse tree generator, syntax and semantic analysis, MIPS code generator, assembler, and linker."]}
                     coverImage="compiler.png"
-                    media_type="image"
                     modalMedia={["compiler.png"]}
                     footer="C++"
                     demo=""
@@ -35,8 +53,7 @@ export default function Projects() {
                     title="Chess"
                     text={["Built a chess application with 3 modes (human vs computer, human vs human, computer vs computer), 3 levels of computer difficulty, GUI, CLI, and extra features such as undo move, custom game setup mode, move history, threat map, and hints.",
                            "Designed the application according to OOP principles (RAII, encapsulation, inheritance, etc.), including design patterns and MVC architecture."]}
-                    coverImage="knight.png"
-                    media_type="image"
+                    coverImage="knight.svg"
                     modalMedia={[]}
                     footer="C++, X11 libraries"
                     demo=""

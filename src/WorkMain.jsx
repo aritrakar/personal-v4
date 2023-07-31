@@ -1,10 +1,10 @@
 import React from "react";
-import WorkCardNew from "./WorkCardNew"
+import WorkCardNew from "./components/WorkCardNew"
 
 export default function WorkMain() {
     return (
         <div id="workContent" className="py-2">
-            <h1 className="text-gray-100 text-4xl m-5">Work Experience</h1>
+            <h1 className="text-gray-100 text-4xl m-5">💼Work Experience</h1>
             
             <WorkCardNew 
                 company="Sportiqo"
@@ -12,15 +12,16 @@ export default function WorkMain() {
                 position="Software Developer"
                 time="February 2023 - Present"
                 roles={[
-                        "Working on data visualization using JavaScript and football rewards model research and development at a Web3 sports-trading exchange startup.",
+                        "Working on an automatic sports article generator using LangChain and Apify.",
+                        "Worked on data visualization using JavaScript and football rewards model research and development at a Web3 sports-trading exchange startup.",
                     ]}
-                footer="JavaScript, Chart.js, Wordpress, HTML/CSS"/>
+                footer="PYthon, LangChain, Apify, JavaScript, Chart.js, Wordpress, HTML/CSS"/>
 
             <WorkCardNew 
                 company="BlackBerry Limited"
                 link="https://www.blackberry.com/us/en/products/cylance-endpoint-security/cylance-gateway"
                 position="Application Software Developer - Product Engineering (CylanceGATEWAY & BBMe)"
-                time="January 2023 - Present"
+                time="January 2023 - April 2023"
                 roles={[
                         "Create a data ingestion and processing system to capture non-Gateway-tunnel network traffic, integrated with a ML model to predict C2 beacon traffic with high precision and recall; ongoing work to improve the model's performance.",
                         "Implement new features and resolve issues with OIDC and 2FA authentication flows for multiple environments in Gateway's internal testing tool, resulting in a 50\% increase in efficiency.",

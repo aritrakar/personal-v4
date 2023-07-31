@@ -32,7 +32,7 @@ export default function Certifications() {
 
     return (
         <div id="certifications" className="w-[100vw] h-auto py-2 flex flex-col content-center items-center white">
-            <h1 className="text-gray-100 text-4xl m-5">Certifications & Badges</h1>
+            <h1 className="text-gray-100 text-4xl m-5">✅Certifications & Badges</h1>
             <div className="flex flex-wrap justify-center w-[70%]">
                 {certifications.map((cert, key) => getCertificationCard({key, ...cert}))
                 }
