@@ -3,8 +3,9 @@ import React from "react"
 export default function Skills() {
     const skillMap = [
         { skill: 'C/C++', image: '/cpp.png' },
-        { skill: 'JavaScript', image: '/js.png' },
         { skill: 'Python', image: '/python.png' },
+        { skill: 'JavaScript', image: '/js.png' },
+        { skill: 'TypeScript', image: '/ts.png' },
         { skill: 'Java', image: '/java.png' },
         { skill: 'Golang', image: '/gopher.png' },
         { skill: 'Bash', image: '/bash.png' },
@@ -13,10 +14,11 @@ export default function Skills() {
         { skill: 'R', image: '/r.png' },
         { skill: 'React', image: '/react.png' },
         { skill: 'Node.js', image: '/node.png' },
-        { skill: 'Firebase', image: '/firebase.svg' },
+        // { skill: 'Firebase', image: '/firebase.svg' },
         { skill: 'PostgreSQL', image: '/pgsql.png' },
         { skill: 'MongoDB', image: '/mongodb.png' },
         { skill: 'Tensorflow', image: '/tf.png' },
+        { skill: 'PyTorch', image: '/pytorch.png' },
         { skill: 'Scikit-learn', image: '/sklearn.png' },
         { skill: 'Git', image: '/git.png' },
         { skill: 'Gitlab', image: '/gitlab.png' },
