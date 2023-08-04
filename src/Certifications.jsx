@@ -18,6 +18,7 @@ function getCertificationCard({key, name, img, link}) {
 
 export default function Certifications() {
     const certifications = [
+        {name:"Ultimate AWS Certified Cloud Practitioner", img: "/udemy.png", link:"https://www.udemy.com/certificate/UC-b8d2116c-6d18-4548-bd1a-6e1146128b62/"},
         {name:"AWS ML Foundations", img: "/udacity.png", link:"https://graduation.udacity.com/confirm/MLGDDXV7"},
         {name:"The Complete SQL Bootcamp", img: "/udemy.png", link:"https://www.udemy.com/certificate/UC-97bb781f-7c4b-47b6-a4ac-f8c58c10cd34/"},
         {name:"Go: The Complete Developer's Guide", img: "/udemy.png", link:"https://www.udemy.com/certificate/UC-7832517a-d907-45b1-bd24-d0ed7e33eaa7/"},

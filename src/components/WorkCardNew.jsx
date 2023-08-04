@@ -15,7 +15,8 @@ export default function WordCard(props) {
                     <ul className="text-red-200 text-lg mb-4 list-disc ml-4">
                         {props.roles?.map((item, key) => <li key={key}>{item}</li>)}
                     </ul>
-                    <p className="text-[rgb(247,95,110)] text-base"><b>Utilized:</b> {props.footer}</p>
+                    {props.footer && <p className="text-[rgb(247,95,110)] text-base"><b>Utilized:</b> {props.footer}</p>}
+                    {/* <p className="text-[rgb(247,95,110)] text-base"><b>Utilized:</b> {props.footer}</p> */}
                 </div>
             </div>
         </div>

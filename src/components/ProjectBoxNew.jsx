@@ -31,6 +31,9 @@ export default function Card(props) {
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+
+  const isModalMedia = props.modalMedia ?? false;
+  const modalWidth = isModalMedia ? "w-[65vw]" : "w-[50vw]";
   
   const [linkEffect, setLinkEffect] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -54,10 +57,9 @@ export default function Card(props) {
     <React.Fragment>
       {/* Card */}
       <div
-        className="w-[19rem] h-[14rem] bg-[rgb(253,209,170)] rounded-3xl 
+        className="w-[19rem] h-[14rem] bg-[rgb(201,252,255)] rounded-3xl 
         overflow-hidden shadow-lg m-4 hover:scale-[1.015] hover:cursor-pointer
         transition duration-200 relative"
-        // bg-[rgb(159,241,255)]
       >
         <div className="absolute w-[19rem] h-full" onClick={() => {
             ReactGA.event({
@@ -74,7 +76,7 @@ export default function Card(props) {
             </div>
 
             <div className="flex flex-row">
-              {(props.demo != "") && 
+              {props.demo && 
                 (
                   <a
                     className={`w-[2rem] h-[2rem] ${
@@ -150,6 +152,7 @@ export default function Card(props) {
               &#8203;
             </span>
 
+            {/* Modal Content */}
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -160,11 +163,9 @@ export default function Card(props) {
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               <div
-                className="bg-[rgb(180,242,255)] inline-block justify-between align-bottom rounded-lg 
+                className={`bg-[rgb(180,242,255)] inline-block justify-between align-bottom rounded-lg 
                 text-center overflow-hidden shadow-xl transform transition-all
-                sm:my-8 sm:align-middle w-[65vw] px-6" 
-                //  bg-[rgb(30,215,248)] h-[80vh] min-h-[50vh]
-                // sm:max-w-lg sm:w-full
+                sm:my-8 sm:align-middle px-6 ${modalWidth}`}
               >
                 <div className="dark:bg-slate-900 px-4 pt-5 pb-4 sm:p-6 sm:pb-4 items-center">
                   <div className="sm:flex sm:items-start">
@@ -178,9 +179,9 @@ export default function Card(props) {
                       </Dialog.Title>
 
                       <div className="flex flex-row items-center justify-center">
-                        <div className="w-[50%] mb-1">
+                        <div className={`mb-1 ${isModalMedia && "w-[50%]"}`}>
                           <Slider {...sliderSettings}>
-                            {props.modalMedia.map((item, key) => {
+                            {props.modalMedia?.map((item, key) => {
                               return (<div key={key}>
                                 {
                                   isImage(item) ? 
@@ -200,7 +201,7 @@ export default function Card(props) {
                         <br />
 
                         {/* Project text */}
-                        <div className="flex flex-col justify-between w-[50%]">
+                        <div className={`flex flex-col justify-between ${isModalMedia && "w-[50%]"}`}>
                             {props.text.map((item, key) => {
                               return (
                                 <p key={key} className="ml-5 p-4 text-lg text-[rgb(15,74,93)] font-lightfont dark:text-white not-sr-only">
@@ -215,9 +216,12 @@ export default function Card(props) {
                   </div>
                 </div>
 
-                <div className="dark:bg-[#00142e] px-4 py-3 sm:px-6 sm:flex sm:flex-row">
+                {/* Modal: Buttons */}
+                
+                <div className={`dark:bg-[#00142e] px-4 py-3 sm:px-6 sm:flex sm:flex-row justify-center`}>
                   {/* Modal: Open in new tab button */}
-                  <button
+                  {(target !== "") && (
+                    <button
                     type="button"
                     className="mt-3 w-full inline-flex justify-center rounded-md border 
                     border-gray-300 shadow-sm px-4 py-2 bg-[rgb(18,55,86)] text-base font-medium 
@@ -227,6 +231,8 @@ export default function Card(props) {
                   >
                     <div className="">{LinkIcon()}</div>
                   </button>
+                  )}
+                  
 
                   {/* Modal: Close button */}
                   <div className="sm:flex sm:flex-row-reverse">

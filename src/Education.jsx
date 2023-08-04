@@ -5,20 +5,18 @@ export default function Education() {
     return (
         <div id="educationContent" className="py-2">
             <h1 className="text-gray-100 text-4xl m-5">🎓Education</h1>
-
             <EducationCard 
                 company="University of Waterloo"
                 link="https://uwaterloo.ca/"
                 position="Bachelor of Computer Science (AI Specialization; Minor in Statistics)"
                 time="September 2022 - April 2025"
                 roles={[
-                        "Relevant Coursework: Object-Oriented Software Development, Algorithms, Data Structures, Compilers",
+                        "Relevant Coursework: A.I., OSs, Object-Oriented Software Development, Algorithms, Data Structures, Databases, Compilers",
                         "Term Distinction: All academic terms (Fall '20, Winter '21, Fall '21, Winter '22, Fall '22)",
                         "Organisations: Formula Electric, The Zero Experience, Computer Science Club, Poker Studies Club",
-                        "Awards: President’s Scholarship of Distinction ($2k), Mathematics International Experience Scholarship ($5k), Certificate of Distinction in Euclid Mathematics Contest (Top 25% worldwide)"
+                        "Awards: President’s Scholarship of Distinction ($2k); Mathematics International Experience Scholarship ($5k); Certificate of Distinction in Euclid Mathematics Contest (Top 25% worldwide)"
                     ]}
             />
-
             <EducationCard 
                 company="South City International School"
                 link="https://www.scis.co.in/"

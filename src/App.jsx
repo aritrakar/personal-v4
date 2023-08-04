@@ -81,7 +81,7 @@ function getStars() {
     "position",
     new THREE.BufferAttribute(new Float32Array(vertices), 3)
   );
-  const starTexture = new THREE.TextureLoader().load("star.png");
+  const starTexture = new THREE.TextureLoader().load("/images/star.png");
   const starMaterial = new THREE.PointsMaterial({
     color: 0xaaaaaa,
     size: 0.7,
@@ -101,7 +101,7 @@ function showStars(camera, scene) {
   gsap.to(camera.position, { z: 2, y: -3, duration: 1.75 });
   gsap.to(camera.rotation, { x: 1.75, duration: 1.5 });
 
-  const duration = 0.15;
+  const duration = 0.1;
   gsap.timeline({repeat: 2, repeatDelay: 0})
       .to("#bannerContent", {x: 1, y: 1, rotate: 0, duration: duration})
       .to("#bannerContent", {x: getRandomInt(-5,5), y: getRandomInt(-5,5), rotate: getRandomInt(-2, 0), duration: duration})
@@ -383,7 +383,7 @@ function App() {
                 type="noopener noreferrer"
                 className="mx-[4rem] hover:scale-[1.1]"
               >
-                <img src="./images/github-24.png" alt="Github" />
+                <img src="/images/github-24.png" alt="Github" />
               </a>
               <a
                 id="mail"
@@ -401,7 +401,7 @@ function App() {
                 type="noopener noreferrer"
                 className="mx-[4rem] hover:scale-[1.1]"
               >
-                <img src="./images/facebook-24.png" alt="Facebook" />
+                <img src="/images/facebook-24.png" alt="Facebook" />
               </a>
               <a
                 id="instagram"

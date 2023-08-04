@@ -5,7 +5,14 @@ export default function WorkMain() {
     return (
         <div id="workContent" className="py-2">
             <h1 className="text-gray-100 text-4xl m-5">💼Work Experience</h1>
-            
+            <WorkCardNew 
+                company="Royal Bank of Canada (RBC)"
+                link="https://www.rbc.com/canada.html"
+                position="Cloud Engineer"
+                time="September 2023 - December 2023"
+                roles={[]}
+                footer=""/>
+
             <WorkCardNew 
                 company="Sportiqo"
                 link="https://www.sportiqo.com/"
@@ -15,7 +22,7 @@ export default function WorkMain() {
                         "Working on an automatic sports article generator using LangChain and Apify.",
                         "Worked on data visualization using JavaScript and football rewards model research and development at a Web3 sports-trading exchange startup.",
                     ]}
-                footer="PYthon, LangChain, Apify, JavaScript, Chart.js, Wordpress, HTML/CSS"/>
+                footer="Python, LangChain, Apify, JavaScript, Chart.js, Wordpress, HTML/CSS"/>
 
             <WorkCardNew 
                 company="BlackBerry Limited"
@@ -50,6 +57,6 @@ export default function WorkMain() {
                         "Developed curricula and lesson plans for teaching coding to kids through 6 Java, JavaScript & Python courses engagingly through exercises and games (Minecraft).",
                         "Conducted online classes and summer camps for 10+ students aged 7-12 and prepared visual aids to illustrate concepts.",
                         "Reviewed the existing UI of the company's two websites and suggested improvements and new features which, when implemented, would significantly improve website loading times, UX, and traffic."]}
-                footer="JavaScript, Java, Python"/>
+                footer="JavaScript, Java, Python, Minecraft Forge, MCreator"/>
         </div>);
 }

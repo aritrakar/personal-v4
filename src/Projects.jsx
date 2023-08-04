@@ -8,24 +8,24 @@ export default function Projects() {
             <h3 className="text-gray-300 text-xl m-5">Click on each project to learn more!</h3>
             <div className="flex flex-wrap justify-center">
                 <ProjectBoxNew 
-                    title="Doom Agent"
+                    title="A.I. Projects"
                     text={[
-                        "Exploring reinforcement learning techniques by building agents to play through Doom 1993 levels.",
-                        ]}
-                    coverImage="doom.svg"
-                    modalMedia={["doom.svg"]}
-                    footer="Python, VizDoom, PyTorch"
-                    demo=""
-                    github=""
+                        "A collection of experiments using A.I. in different fields. See GitHub repo for more details.",
+                        "Projects include: PDF-GPT, N.A.R.V.I.S. (chatbot), traffic sign detection, sarcasm detection, and more.",
+                        "Learning about image diffusion models."
+                    ]}
+                    coverImage="/brain.png"
+                    footer="Python, Tensorflow, Keras, Scikit-learn, Matplotlib, Pandas, NumPy"
+                    github="https://github.com/aritrakar/ai-projects"
                 />
                 <ProjectBoxNew 
-                    title="A.I. Projects"
-                    text={["A collection of experiments using A.I. in different fields. See GitHub repo for more details."]}
-                    coverImage="brain.png"
-                    modalMedia={["brain.png"]}
-                    footer="Python, Tensorflow, Keras, Scikit-learn, Matplotlib, Pandas, NumPy"
-                    demo=""
-                    github="https://github.com/aritrakar/ai-projects"
+                    title="Doom Agent"
+                    text={[
+                        "Exploring reinforcement learning techniques by building agents that learn to play through custom DOOM 1993 levels.",
+                        ]}
+                    coverImage="/doom.svg"
+                    footer="Python, VizDoom, PyTorch"
+                    github=""
                 />
                 <ProjectBoxNew 
                     title="Traffic Sign Detection"
@@ -33,30 +33,37 @@ export default function Projects() {
                     "Optimized performance using the Adam optimizer in model training, and using image preprocessing algorithms on the 50k+ image dataset.",
                     "Visualized model training and validation accuracies and losses across epochs with Matplotlib."
                     ]}
-                    coverImage="traffic.png"
-                    modalMedia={["traffic_predictions.png", "traffic_graph.png"]}
+                    coverImage="/traffic.png"
+                    modalMedia={["/traffic_predictions.png", "/traffic_graph.png"]}
                     footer="Python, Tensorflow, Keras, Scikit-learn, Matplotlib, Pandas, NumPy"
-                    demo=""
                     github="https://github.com/aritrakar/TrafficSignDetection"
                 />
+                <ProjectBoxNew
+                    title="Music App"
+                    text={[
+                        "A music app that allows users to search for songs, create playlists, play songs from their playlists, and more.",
+                        "Worked on dark mode, sortable track table, album search functionality, and more.",
+                        "Built as a group project for a databases class (CS348)."
+                    ]}
+                    coverImage="/note.svg"
+                    modalMedia={["/music_1.png", "/music_2.png", "/music_3.png", "/music_4.png", "/music_5.png", "/music_6.png" ]}
+                    footer="TypeScript, React.js, Next.js, PostgreSQL, Material UI, Docker, Google Cloud Platform"
+                    demo="https://cs348.espi.dev/"
+                    github="https://github.com/Raymo111/cs348"/>
                 <ProjectBoxNew 
                     title="WLP4 compiler"
                     text={["Created a compiler for WLP4, a subset of C, which outputs a relocatable, executable MIPS binary file.",
                            "Compiler design incorporated (simplified) Maximal Munch scanning algorithm, LR(1) parser, parse tree generator, syntax and semantic analysis, MIPS code generator, assembler, and linker."]}
-                    coverImage="compiler.png"
-                    modalMedia={["compiler.png"]}
+                    coverImage="/compiler.png"
                     footer="C++"
-                    demo=""
                     github="https://github.com/aritrakar/WLP4-compiler"
                 />
                 <ProjectBoxNew 
                     title="Chess"
                     text={["Built a chess application with 3 modes (human vs computer, human vs human, computer vs computer), 3 levels of computer difficulty, GUI, CLI, and extra features such as undo move, custom game setup mode, move history, threat map, and hints.",
                            "Designed the application according to OOP principles (RAII, encapsulation, inheritance, etc.), including design patterns and MVC architecture."]}
-                    coverImage="knight.svg"
-                    modalMedia={[]}
+                    coverImage="/knight.svg"
                     footer="C++, X11 libraries"
-                    demo=""
                     github=""
                 />
                 <ProjectBoxNew
@@ -70,14 +77,12 @@ export default function Projects() {
                     footer="React.js, JavaScript, HTML5, CSS3"
                     demo="https://aritrakar.github.io/pathfinding_visualizer/"
                     github="https://github.com/aritrakar/pathfinding_visualizer"/>
-                <ProjectBoxNew
+                {/* <ProjectBoxNew
                     title="J.A.R.V.I.S."
                     text={["A personal voice assistant that uses deep learning to classify and respond to various commands and perform 6 unique actions: search Google, get events from Google Calendar, play songs on Spotify, etc."]}
                     coverImage="brain.png"
-                    modalMedia={[]}
                     footer="Python, Tensorflow"
-                    demo=""
-                    github="https://github.com/aritrakar/Python-Projects/tree/master/Chatbot/Speech%20To%20Text"/>
+                    github="https://github.com/aritrakar/Python-Projects/tree/master/Chatbot/Speech%20To%20Text"/> */}
                 <ProjectBoxNew
                     title="Spacetagram"
                     text={[
