@@ -25,7 +25,7 @@ export default function Projects() {
                         ]}
                     coverImage="/doom.svg"
                     footer="Python, VizDoom, PyTorch"
-                    github=""
+                    github="https://github.com/aritrakar/doom"
                 />
                 <ProjectBoxNew 
                     title="Traffic Sign Detection"
