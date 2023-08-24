@@ -10,8 +10,8 @@ export default function WorkMain() {
                 link="https://www.rbc.com/canada.html"
                 position="Cloud Engineer"
                 time="September 2023 - December 2023"
-                roles={[]}
-                footer=""/>
+                roles={["Incoming."]}
+                footer="Java, Microsoft Azure, Terraform"/>
 
             <WorkCardNew 
                 company="Sportiqo"

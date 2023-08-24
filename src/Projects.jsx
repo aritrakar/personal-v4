@@ -19,12 +19,21 @@ export default function Projects() {
                     github="https://github.com/aritrakar/ai-projects"
                 />
                 <ProjectBoxNew 
-                    title="Doom Agent"
+                    title="StarCraft II Agent"
+                    text={[
+                        "Exploring reinforcement learning techniques by building agents that learn to play StarCraft II.",
+                        ]}
+                    coverImage="/sc2.svg"
+                    footer="Python, PyTorch, Stable Baselines3, PySC2"
+                    github="https://github.com/aritrakar/starcraft2"
+                />
+                <ProjectBoxNew 
+                    title="DOOM Agent"
                     text={[
                         "Exploring reinforcement learning techniques by building agents that learn to play through custom DOOM 1993 levels.",
                         ]}
                     coverImage="/doom.svg"
-                    footer="Python, VizDoom, PyTorch"
+                    footer="Python, PyTorch, VizDoom, Sample Factory, Stable Baselines3"
                     github="https://github.com/aritrakar/doom"
                 />
                 <ProjectBoxNew 
