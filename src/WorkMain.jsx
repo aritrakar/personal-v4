@@ -10,8 +10,12 @@ export default function WorkMain() {
                 link="https://www.rbc.com/canada.html"
                 position="Cloud Engineer"
                 time="September 2023 - December 2023"
-                roles={["Incoming."]}
-                footer="Java, Microsoft Azure, Terraform"/>
+                roles={[
+                    "Designing and implementing a system to automate infrastructure deployment using Golang, Terraform, Jenkins, and OpenAI models.",
+                    "Collaborating in the development and enhancement of internal ETL and data governance tools by leveraging Microsoft Azure Data Factory and Microsoft Purview. Actively introducing new features and efficiently resolving issues raised by various teams, thereby contributing to improved functionality and user experience.",
+                    "Developing new microservices using Java and Spring Boot JPA to enhance backend functionality of internal tools."
+                ]}
+                footer="Java, Golang, Python, Microsoft Azure, Terraform, Jenkins, Git"/>
 
             <WorkCardNew 
                 company="Sportiqo"
@@ -22,7 +26,7 @@ export default function WorkMain() {
                         "Working on an automatic sports article generator using LangChain and Apify.",
                         "Worked on data visualization using JavaScript and football rewards model research and development at a Web3 sports-trading exchange startup.",
                     ]}
-                footer="Python, LangChain, Apify, JavaScript, Chart.js, Wordpress, HTML/CSS"/>
+                footer="Python, LangChain, Apify, JavaScript, Chart.js, Wordpress"/>
 
             <WorkCardNew 
                 company="BlackBerry Limited"

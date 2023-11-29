@@ -13,16 +13,19 @@ export default function Skills() {
         { skill: 'CSS3', image: '/css3.png' },
         { skill: 'R', image: '/r.png' },
         { skill: 'React', image: '/react.png' },
-        { skill: 'Node.js', image: '/node.png' },
+        { skill: 'Spring Boot', image: '/spring_boot.png' },
         { skill: 'Material UI', image: '/mui.svg' },
+        { skill: 'Node.js', image: '/node.png' },
         { skill: 'Firebase', image: '/firebase.svg' },
         { skill: 'PostgreSQL', image: '/pgsql.png' },
-        { skill: 'MongoDB', image: '/mongodb.png' },
+        // { skill: 'MongoDB', image: '/mongodb.png' },
         { skill: 'Tensorflow', image: '/tf.png' },
         { skill: 'PyTorch', image: '/pytorch.png' },
         { skill: 'Scikit-learn', image: '/sklearn.png' },
         { skill: 'Git', image: '/git.png' },
         { skill: 'Gitlab', image: '/gitlab.png' },
+        { skill: 'Jenkins', image: '/jenkins.png' },
+        { skill: 'Terraform', image: '/terraform.png' },
         { skill: 'Docker', image: '/docker.webp' },
         { skill: 'Agile', image: '/jira.svg' },
         { skill: 'LaTeX', image: '/latex.png' }
@@ -31,7 +34,7 @@ export default function Skills() {
     return (
         <div id="skills" className="h-auto py-2 flex flex-col content-center items-center white z-[100]">
             <h1 className="text-gray-100 text-4xl m-5">🔧Skills</h1>
-            <div className="flex flex-wrap justify-center w-[70%]">
+            <div className="flex flex-wrap justify-center w-[80%]">
                 {skillMap.map((skill, key) => (
                     <div className="m-2 hover:scale-[1.03]"
                         key={key}

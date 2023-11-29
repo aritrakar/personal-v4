@@ -22,7 +22,7 @@ export default function EducationCard(props) {
                     </h5>
                     <p className="text-[rgb(252,156,132)] text-base mb-2"><b>{props.position} | {props.time}</b></p>
                     <ul className="text-red-200 text-lg mb-4 list-disc ml-4">
-                        {props.roles?.map((item, key) => <li key={key}>{format(item)}</li>)}
+                        {props.roles?.map((item, key) => <li key={key}>{props.format ? format(item) : item}</li>)}
                     </ul>
                 </div>
             </div>
