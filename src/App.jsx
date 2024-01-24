@@ -6,7 +6,7 @@ import Skills from "./Skills";
 import { useRef } from 'react';
 import Footer from './Footer';
 import "./App.css"
-import WorkMain from './WorkMain';
+import Work from './Work';
 import Certifications from './Certifications';
 import Education from './Education';
 import Club from './Clubs';
@@ -405,6 +405,15 @@ function App() {
                 <img src="/images/facebook-24.png" alt="Facebook" />
               </a>
               <a
+                id="twitter"
+                href="https://twitter.com/aritrakar28"
+                target="_blank"
+                type="noopener noreferrer"
+                className="mx-[4rem] hover:scale-[1.1]"
+              >
+                <img src="./images/x-logo.svg" alt="X/Twitter" />
+              </a>
+              {/* <a
                 id="instagram"
                 href="https://www.instagram.com/aritrakar28/"
                 target="_blank"
@@ -412,7 +421,7 @@ function App() {
                 className="mx-[4rem] hover:scale-[1.1]"
               >
                 <img src="./images/instagram-24.png" alt="Instagram" />
-              </a>
+              </a> */}
             </div>
 
             <button
@@ -427,8 +436,7 @@ function App() {
 
         <div className="absolute top-[100%]">
           <div ref={workRef} className="flex justify-center">
-            {/* <Work /> */}
-            <WorkMain />
+            <Work />
             <div className="w-[40vw]">
               <Skills />
               <Education />

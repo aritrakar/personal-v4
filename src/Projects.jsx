@@ -10,13 +10,23 @@ export default function Projects() {
                 <ProjectBoxNew 
                     title="A.I. Projects"
                     text={[
-                        "A collection of experiments using A.I. in different fields. See GitHub repo for more details.",
-                        "Projects include: PDF-GPT, N.A.R.V.I.S. (chatbot), traffic sign detection, sarcasm detection, and more.",
+                        "A collection of experiments using A.I. in different fields. See GitHub repository for more details.",
+                        "Projects include: PDF-GPT, N.A.R.V.I.S. (chatbot), lane detection, traffic sign detection, sarcasm detection, and more.",
                         "Learning about image diffusion models."
                     ]}
                     coverImage="/brain.png"
-                    footer="Python, Tensorflow, Keras, Scikit-learn, Matplotlib, Pandas, NumPy"
+                    footer="Python, PyTorch, Tensorflow, Keras, Scikit-learn, Pandas, NumPy, Matplotlib"
                     github="https://github.com/aritrakar/ai-projects"
+                />
+                <ProjectBoxNew 
+                    title="Genetic Algorithm Neural Network Car Simulation"
+                    text={[
+                        "Created neural networks from scratch in C++ to enable agents to learn to navigate the simulation environment created with SFML (Simple and Fast Multimedia Library).",
+                        "Integrated genetic algorithms to enhance neural network evolution, achieving progressive improvements in autonomous car decision-making and adaptability."
+                        ]}
+                    coverImage="/driving.svg"
+                    footer="C++, SFML"
+                    github="https://github.com/aritrakar/genetic-driving"
                 />
                 <ProjectBoxNew 
                     title="StarCraft II Agent"

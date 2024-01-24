@@ -18,6 +18,9 @@ function getCertificationCard({key, name, img, link}) {
 
 export default function Certifications() {
     const certifications = [
+        {name:"Practical Data Science with Amazon SageMaker", img: "/aws.png", link:"https://drive.google.com/file/d/1VTY6el09FDk9tGOtQezIyz4mlTlPdKVW/view?usp=sharing"},
+        {name:"Building Streaming Data Analytics Solutions on AWS", img: "/aws.png", link:"https://drive.google.com/file/d/1Pq9DLWAz9Zr0ucsdyHx_e8MldcB5jELo/view?usp=sharing"},
+        {name:"CI/CD with Jenkins using Docker", img: "/udemy.png", link:"https://udemy-certificate.s3.amazonaws.com/pdf/UC-0cc7b8cf-2b72-49cb-992e-7825338b73b5.pdf"},
         {name:"Ultimate AWS Certified Cloud Practitioner", img: "/udemy.png", link:"https://www.udemy.com/certificate/UC-b8d2116c-6d18-4548-bd1a-6e1146128b62/"},
         {name:"AWS ML Foundations", img: "/udacity.png", link:"https://graduation.udacity.com/confirm/MLGDDXV7"},
         {name:"The Complete SQL Bootcamp", img: "/udemy.png", link:"https://www.udemy.com/certificate/UC-97bb781f-7c4b-47b6-a4ac-f8c58c10cd34/"},
@@ -26,7 +29,7 @@ export default function Certifications() {
         {name:"Software Engineering Virtual Experience", img: "/forage.png", link:"https://insidesherpa.s3.amazonaws.com/completion-certificates/JP%20Morgan/R5iK7HMxJGBgaSbvk_J.P.%20Morgan%20Chase_eLFGEmEGGCddkc8aF_completion_certificate.pdf"},
         {name:"Agile Fundamentals", img: "/udemy.png", link:"https://www.udemy.com/certificate/UC-840c45a1-49de-4a23-9dbe-0791845da9fb/"},
         {name:"Intermediate Machine Learning", img: "/kaggle.png", link:"https://www.kaggle.com/learn/certification/aritrakar/intermediate-machine-learning"},
-        {name:"Intro to Machine Learning", img: "/kaggle.png", link:"https://www.kaggle.com/learn/certification/aritrakar/intro-to-machine-learning"},
+        // {name:"Intro to Machine Learning", img: "/kaggle.png", link:"https://www.kaggle.com/learn/certification/aritrakar/intro-to-machine-learning"},
         {name:"Data Visualization", img: "/kaggle.png", link:"https://www.kaggle.com/learn/certification/aritrakar/data-visualization"},
         {name:"Python", img: "/kaggle.png", link:"https://www.kaggle.com/learn/certification/aritrakar/python"}
     ]
@@ -34,7 +37,7 @@ export default function Certifications() {
     return (
         <div id="certifications" className="w-[100vw] h-auto py-2 flex flex-col content-center items-center white">
             <h1 className="text-gray-100 text-4xl m-5">✅Certifications & Badges</h1>
-            <div className="flex flex-wrap justify-center w-[70%]">
+            <div className="flex flex-wrap justify-center w-[80%]">
                 {certifications.map((cert, key) => getCertificationCard({key, ...cert}))
                 }
             </div>

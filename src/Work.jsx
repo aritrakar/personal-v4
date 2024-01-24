@@ -1,31 +1,65 @@
 import React from "react";
-import WorkCard from "./components/WorkCard"
+import WorkCardNew from "./components/WorkCardNew"
 
 export default function Work() {
     return (
-        // <div id="workContent" className="top-[100vh] w-[100vw] h-[110vh] px-6 pb-8 bg-gradient-to-b from-cyan-500 to-blue-500 absolute"> mt-[100vh]
-        <div id="workContent" className="py-8">
-            <h1 className="text-gray-100 text-4xl m-5">Work Experience</h1>
-            <WorkCard 
-                company="BlackBerry Limited"
-                position="Software Development Student"
-                time="May 2022 - August 2022"
+        <div id="workContent" className="py-2">
+            <h1 className="text-gray-100 text-4xl m-5">💼Work Experience</h1>
+            <WorkCardNew 
+                company="Royal Bank of Canada (RBC)"
+                link="https://www.rbc.com/canada.html"
+                position="Cloud Engineer"
+                time="September 2023 - December 2023"
                 roles={[
-                        "Created tools with Python, AWS Lambda, and S3 to automate uploading and downloading release packages to and from AWS S3 and Nexus Repository.",
-                        "Designed and implemented a JSON configuration file semantic validator in C++ from scratch and integrated it into BlackBerry IVY Intelligent Vehicle Development Platform.",
-                        "Collaborated on a team of 4 to improve client interaction with the Camera service by implementing the Permission service callback feature. Created and published Bash scripts to automate building, uploading, and testing.",
-                        "Conducted extensive UX research on IVY and code reviews on code written by teammates. Led documentation effort to improve code readability, productivity, and future intern onboarding experiences."]}
-                image="blackberry.svg"
-                footer="C++, Python, Bash, Docker, AWS S3, AWS Lambda, Gitlab, Agile"/>
-            <WorkCard 
+                    "Increased deployment efficiency by 30% through automating infrastructure setup with Golang, Jenkins, and Terraform, simplifying complex Databricks workspace deployments in a secure environment.",
+                    "Enhanced backend functionality of key products by developing Java-based microservices using Spring Boot JPA, integrated with Azure Data Factory and Microsoft Purview to optimize data governance and ETL processes."
+                ]}
+                footer="Java, Golang, Python, Microsoft Azure, Terraform, Jenkins, Git"/>
+
+            <WorkCardNew 
+                company="Sportiqo"
+                link="https://www.sportiqo.com/"
+                position="Software Developer"
+                time="February 2023 - Present"
+                roles={[
+                        "Independently spearheading the creation of an automatic sports article generator LLM, employing Python, LangChain, and Apify technologies to streamline content generation.",
+                        "Created dynamic and interactive cricket Sporti-score component visualizations using JavaScript (Chart.js), enhancing data understanding and presentation.",
+                    ]}
+                footer="Python, LangChain, Apify, JavaScript, Chart.js, Wordpress"/>
+
+            <WorkCardNew 
+                company="BlackBerry Limited"
+                link="https://www.blackberry.com/us/en/products/cylance-endpoint-security/cylance-gateway"
+                position="Application Software Developer - Product Engineering (CylanceGATEWAY & BBMe)"
+                time="January 2023 - April 2023"
+                roles={[
+                        "Create a data ingestion and processing system to capture non-Gateway-tunnel network traffic, integrated with a ML model to predict C2 beacon traffic with high precision and recall; ongoing work to improve the model's performance.",
+                        "Implement new features and resolve issues with OIDC and 2FA authentication flows for multiple environments in Gateway's internal testing tool, resulting in a 50\% increase in efficiency.",
+                        "Enforce adherence to RFC standards and develop highly resilient code for core libraries utilized extensively across multiple BlackBerry projects.",
+                        "Strengthen software products by reviewing code and executing rigorous unit and integration testing, achieving high reliability and performance standards."]}
+                footer="C++, Python, Scikit-learn, Bash, Jenkins, GitLab, Agile"/>
+
+            <WorkCardNew 
+            company="BlackBerry Limited"
+            link="https://www.blackberry.com/us/en/products/automotive/blackberry-ivy"
+            position="Software Developer - IVY"
+            time="May 2022 - August 2022"
+            roles={[
+                    "Created tools with Python, AWS Lambda, and S3 to automate uploading and downloading release packages to and from AWS S3 and Nexus Repository.",
+                    "Designed and implemented a JSON configuration file semantic validator in C++ from scratch and integrated it into BlackBerry IVY Intelligent Vehicle Development Platform.",
+                    "Collaborated on a team of 4 to improve client interaction with the Camera service by implementing the Permission service callback feature. Created and published Bash scripts to automate building, uploading, and testing.",
+                    "Conducted extensive UX research on IVY and code reviews on code written by teammates. Led documentation effort to improve code readability, productivity, and future intern onboarding experiences."]}
+            footer="C++, Python, Bash, Docker, AWS (Lambda, S3, CloudWatch, IAM), GitLab, Agile"/>
+
+            <WorkCardNew
                 company="MindKraft Education Inc."
+                link="https://www.mindkraft.ca/"
                 position="Software Developer & Coding Instructor"
                 time="May 2021 - September 2021"
                 roles={[
                         "Developed curricula and lesson plans for teaching coding to kids through 6 Java, JavaScript & Python courses engagingly through exercises and games (Minecraft).",
                         "Conducted online classes and summer camps for 10+ students aged 7-12 and prepared visual aids to illustrate concepts.",
                         "Reviewed the existing UI of the company's two websites and suggested improvements and new features which, when implemented, would significantly improve website loading times, UX, and traffic."]}
-                image="mindkraft.png"
-                footer="JavaScript, Java, Python"/>
+                footer="JavaScript, Java, Python, Minecraft Forge, MCreator"/>
         </div>);
 }
