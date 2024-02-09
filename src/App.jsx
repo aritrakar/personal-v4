@@ -102,6 +102,7 @@ function showStars(camera, scene) {
   gsap.to(camera.position, { z: 2, y: -3, duration: 1.75 });
   gsap.to(camera.rotation, { x: 1.75, duration: 1.5 });
 
+  // Banner shaking animation
   const duration = 0.1;
   gsap.timeline({repeat: 2, repeatDelay: 0})
       .to("#bannerContent", {x: 1, y: 1, rotate: 0, duration: duration})
@@ -194,7 +195,6 @@ function App() {
       renderer.setSize(size.width, size.height);
     else
       renderer.setSize(window.innerWidth, window.innerHeight);
-    // bannerCamera.position.setZ(6.8);
     bannerCamera.position.setZ(6.5);
     document.body.appendChild(renderer.domElement);
 
@@ -225,8 +225,8 @@ function App() {
     
       if(renderer && bannerScene && bannerCamera)
         renderer.render(bannerScene, bannerCamera);
-    
-      if (starsClicked) {    
+
+      if (starsClicked) {
         let { array } = stars.geometry.getAttribute("position");
     
         if (velocity <= 31) {
@@ -238,7 +238,7 @@ function App() {
             if (velocity < 20) array[i] -= velocity;
             if (array[i] < -200) array[i] = 400;
           }
-          gsap.to(bannerCamera.position, { z: 6, duration: 3 }); //
+          gsap.to(bannerCamera.position, { z: 6, duration: 3 });
         } else {
           for (let i = 1; i < array.length; i += 3) {
             array[i] -= 0.01;
@@ -361,8 +361,6 @@ function App() {
                 >
                   Projects
                 </button>
-
-                
 
                 <a href="https://github.com/aritrakar/resume/blob/main/Aritra_Kar_Resume.pdf" target="_blank" type="noopener noreferrer" className="border px-4 py-2 mx-3 rounded-lg text-sm font-space-mono uppercase hover:bg-white hover:text-gray-800 duration-200 inline-block">Resume</a>
               </div>
