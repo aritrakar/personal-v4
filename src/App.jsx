@@ -9,7 +9,7 @@ import "./App.css"
 import Work from './Work';
 import Certifications from './Certifications';
 import Education from './Education';
-import Club from './Clubs';
+import Volunteering from './Volunteering';
 import ReactGA from 'react-ga';
 
 let starGeometry = undefined;
@@ -440,7 +440,7 @@ function App() {
             <div className="w-[40vw]">
               <Skills />
               <Education />
-              <Club />
+              <Volunteering />
             </div>
           </div>
           <div ref={projectRef}>
