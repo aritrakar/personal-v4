@@ -436,9 +436,9 @@ function App() {
           <div ref={workRef} className="flex justify-center">
             <Work />
             <div className="w-[40vw]">
-              <Skills />
               <Education />
               <Volunteering />
+              <Skills />
             </div>
           </div>
           <div ref={projectRef}>

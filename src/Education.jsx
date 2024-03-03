@@ -11,9 +11,9 @@ export default function Education() {
                 position="Bachelor of Computer Science (AI Specialization; Minor in Statistics)"
                 time="September 2020 - April 2025"
                 roles={[
-                        "Relevant Coursework: A.I., OSs, Object-Oriented Software Development, Algorithms, Data Structures, Databases, Compilers",
+                        "Relevant Coursework: AI, ML, OS, Object-Oriented Programming, Algorithms, Data Structures, Databases, Compilers",
                         "Term Distinction: All academic terms (Fall '20, Winter '21, Fall '21, Winter '22, Fall '22, Spring '23)",
-                        "Organisations: Entrepreneurship Society, Wat Street, The Zero Experience, CS Club, Poker Studies Club",
+                        "Organisations: Entrepreneurship Society, Wat Street, Waterloo Aerial Robotics Group, The Zero Experience, CS Club, Poker Studies Club",
                         "Awards: President’s Scholarship of Distinction ($2k); Mathematics International Experience Scholarship ($5k); Certificate of Distinction in Euclid Mathematics Contest (Top 25% worldwide)"
                     ]}
                 format={true}

@@ -11,12 +11,23 @@ export default function Projects() {
                     title="A.I. Projects"
                     text={[
                         "A collection of experiments using A.I. in different fields. See GitHub repository for more details.",
-                        "Projects include: PDF-GPT, N.A.R.V.I.S. (chatbot), lane detection, traffic sign detection, sarcasm detection, and more.",
+                        "Projects include: PDF-GPT, N.A.R.V.I.S. (chatbot), lane detection, traffic sign detection, sarcasm detection, and many more.",
                         "Learning about image diffusion models."
                     ]}
                     coverImage="/brain.png"
                     footer="Python, PyTorch, Tensorflow, Keras, Scikit-learn, Pandas, NumPy, Matplotlib"
                     github="https://github.com/aritrakar/ai-projects"
+                />
+                <ProjectBoxNew 
+                    title="Behavior Cloning for Autonomous Driving"
+                    text={[
+                        "Trained a model to predict steering angles from images of a car's perspective, achieving a mean squared error of 0.05 on the Udacity self-driving car simulator.",
+                        "Implemented a server-client architecture to enable real-time communication between the model and the simulator, allowing the model to control the car in the simulator environment.",
+                        ]}
+                    coverImage="/behavioral_cloning.gif"
+                    modalMedia={["/behavioral_cloning.gif"]}
+                    footer="Python, PyTorch, OpenCV, SocketIO"
+                    github="https://github.com/aritrakar/behavioral-cloning-car"
                 />
                 <ProjectBoxNew 
                     title="Genetic Algorithm Neural Network Car Simulation"
@@ -116,7 +127,7 @@ export default function Projects() {
                     github="https://github.com/aritrakar/spacetagram"/>
             </div>
 
-            <h1 className="text-gray-100 text-xl m-5">For my other projects, check out my <a href="https://github.com/aritrakar" target="_blank" rel="noopener noreferrer" className="p-0 m-0 no-underline hover:underline">GitHub</a>!</h1>
+            <h1 className="text-gray-100 text-xl m-5">For all my projects, check out my <a href="https://github.com/aritrakar" target="_blank" rel="noopener noreferrer" className="p-0 m-0 no-underline hover:underline"><b>GitHub</b></a>!</h1>
         </div>
     );
 }

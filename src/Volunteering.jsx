@@ -4,14 +4,14 @@ import EducationCard from "./components/EducationCard"
 export default function Volunteering() {
     return (
         <div id="clubContent" className="py-2">
-            <h1 className="text-gray-100 text-4xl m-5">👀Volunteering</h1>
+            <h1 className="text-gray-100 text-4xl m-5">❤️Volunteering</h1>
             <EducationCard
                 company="Latexify Py"
                 link="https://github.com/google/latexify_py"
                 position="Open source contributor"
                 time="November 2023 - Present"
                 roles={[
-                    "Added support for converting NumPy NDArray single function expressions to LaTeX and helped fix GitHub CI issues."
+                    "Added support for converting 7 NumPy NDArray single function expressions to LaTeX and helped fix GitHub CI issues."
                 ]}
             />
             <EducationCard
@@ -27,11 +27,19 @@ export default function Volunteering() {
             />
 
             <EducationCard
+                company="Waterloo Aerial Robotics Group"
+                link="https://www.uwarg.com/"
+                position="Autonomy Developer"
+                time="February 2024 - Present"
+                roles={["👀Computational vision models for drones."]}
+            />
+
+            <EducationCard
                 company="Wat Street"
                 link="https://ca.linkedin.com/company/wat-street"
                 position="Quantitative Developer"
                 time="September 2023 - Present"
-                roles={["TBA."]}
+                roles={["📈ML models for portfolio optimization."]}
             />
         </div>);
 }
